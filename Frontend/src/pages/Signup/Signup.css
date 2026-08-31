@@ -1,0 +1,207 @@
+/* =========================================
+   GLOBAL & PAGE SETUP
+========================================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.error-message {
+  color: #ed4956;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.success-message {
+  color: #168a3a;
+  font-size: 14px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.signup-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding: 40px 20px;
+}
+
+.signup-container {
+  width: 100%;
+  max-width: 430px;
+  position: relative;
+}
+
+/* Back Chevron Icon */
+.back-button {
+  font-size: 18px;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+/* =========================================
+   HEADER SECTION
+========================================= */
+.signup-header {
+  margin-bottom: 24px;
+}
+
+.meta-icon {
+  font-size: 18px;
+  color: #0064e0;
+  margin-bottom: 8px;
+  display: block;
+}
+
+.signup-header h1 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin-bottom: 4px;
+}
+
+.sub-title {
+  font-size: 13px;
+  color: #65676b;
+}
+
+/* =========================================
+   FORM INPUTS & LABELS
+========================================= */
+.signup-group {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-group label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #1c1e21;
+  margin-bottom: 6px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.help-icon {
+  font-size: 14px;
+  color: #65676b;
+  cursor: pointer;
+}
+
+.signup-group input,
+.dob-dropdowns select {
+  width: 100%;
+  padding: 14px 12px;
+  font-size: 14px;
+  color: #1c1e21;
+  border: 1px solid #cccccc;
+  border-radius: 12px;
+  outline: none;
+  background-color: #ffffff;
+  transition: border-color 0.2s ease;
+}
+
+.signup-group input::placeholder {
+  color: #8e8e8e;
+}
+
+.signup-group input:focus,
+.dob-dropdowns select:focus {
+  border-color: #0064e0;
+}
+
+/* Date of Birth Dropdowns Grid */
+.dob-dropdowns {
+  display: flex;
+  gap: 10px;
+}
+
+.dob-dropdowns select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23131313%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E");
+  background-repeat: no-repeat;
+  background-position: right 12px center;
+  background-size: 10px auto;
+  cursor: pointer;
+}
+
+.field-info {
+  font-size: 12px;
+  color: #65676b;
+  margin-top: 6px;
+  line-height: 1.4;
+}
+
+.field-info a,
+.signup-terms a {
+  color: #0064e0;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.field-info a:hover,
+.signup-terms a:hover {
+  text-decoration: underline;
+}
+
+/* =========================================
+   TERMS & CONDITIONS TEXT
+========================================= */
+.signup-terms {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.signup-terms p {
+  font-size: 11px;
+  color: #65676b;
+  line-height: 1.5;
+}
+
+/* =========================================
+   BUTTONS
+========================================= */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0064e0;
+  color: #ffffff;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #0052b8;
+}
+
+.login-redirect-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #f2f2f2;
+  color: #1c1e21;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-redirect-button:hover {
+  background-color: #e4e4e4;
+}
