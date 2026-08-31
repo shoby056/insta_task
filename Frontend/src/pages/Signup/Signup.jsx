@@ -51,7 +51,7 @@ const Signup = () => {
     try {
       // Backend API ko request
       const response = await fetch(
-        "http://localhost:5000/api/auth/signup",
+        "https://labourer-unique-cat.abasthan.app/api/auth/signup",
         {
           method: "POST",
 
